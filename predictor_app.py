@@ -25,7 +25,6 @@ def predict(studytime, failures, prev_grades):
     explanation += f"\nВероятность сдачи: {prob:.2f}\nПрогноз: {pred_class}"
     return pred_class, explanation
 
-
 iface = gr.Interface(
     fn=predict,
     inputs=[
